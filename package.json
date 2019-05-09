@@ -1,0 +1,40 @@
+{
+  "name": "gatsby-plugin-i18n-extend",
+  "description": "Extension for gatsby-plugin-i18n with ContextProvider and utils",
+  "version": "0.0.1",
+  "author": "Fabian Todt <fabian@fabiantodt.at>",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "intl": "^1.2.5",
+    "prop-types": "^15.7.2",
+    "ptz-i18n": "^1.0.0",
+    "react": "^16.8.6",
+    "react-intl": "^2.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "SET NODE_ENV=\"production\" && npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "test": "jest",
+    "clean": "rimraf *.js"
+  }
+}

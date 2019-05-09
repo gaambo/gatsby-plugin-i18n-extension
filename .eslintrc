@@ -1,0 +1,28 @@
+{
+  "extends": ["airbnb-base", "prettier", "prettier/react"],
+  "plugins": ["prettier", "react"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 2,
+    "global-require": "off"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "globals": {
+    "graphql": true
+  }
+}
