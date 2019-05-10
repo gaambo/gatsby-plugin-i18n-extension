@@ -8,7 +8,9 @@
   "dependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.4",
     "@babel/runtime": "^7.4.3",
+    "babel-preset-gatsby-package": "^0.1.4",
     "intl": "^1.2.5",
     "prop-types": "^15.7.2",
     "ptz-i18n": "^1.0.0",
