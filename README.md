@@ -11,6 +11,13 @@ Install via npm like any other gatsby plugin and configure in `gatsby-config.js`
 
 ```
 {
+  resolve: `gatsby-plugin-i18n`,
+  options: {
+    langKeyDefault: config.defaultLanguage,
+    useLangKeyLayout: false
+  }
+},
+{
   resolve: `gatsby-plugin-i18n-extension`,
   options: {
     path: `${__dirname}/src/data/language/`,
